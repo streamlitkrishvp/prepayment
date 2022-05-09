@@ -81,5 +81,8 @@ print(Total_amount2-Total_amount1)
 print(n2-n1)
 
 #amount_saved = st.text_input(label= 'amount saved', value= (Total_amount2-Total_amount1))
-st.write('The current number is ', Total_amount2-Total_amount1)
+st.write('Amount saved  is ', Total_amount1)
+st.write('Amount saved  is ', Total_amount2)
+st.write('Amount saved  is ', Total_amount2-Total_amount1)
+
 
