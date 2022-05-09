@@ -1,11 +1,13 @@
 import streamlit as st
 st.header("Streamlit Machine Learning App")
-Emi_amount = st.number_input(label='EMI Amount Per month', min_value=None, max_value=None, value=100, step=100)
-Total_oustanding  = st.number_input(label='Total Outstanding Amount', min_value=None, max_value=None, value=100, step=100)
+Emi_amount_1 = st.number_input(label='EMI Amount Per month', min_value=None, max_value=None, value=100, step=100)
+Total_oustanding_1  = st.number_input(label='Total Outstanding Amount', min_value=None, max_value=None, value=100, step=100)
 #interest_rate = st.number_input(label='Interest rate per annum',step=1,format="%.2f")
 #prepayment_amt  = st.number_input(label='Prepayment ', min_value=None, max_value=None, value=100, step=100)
-interest_rate = st.number_input('Enter interest rate')
-prepayment_amt = st.number_input('Enter Prepayment Amount')
+interest_rate_1 = st.number_input('Enter interest rate')
+prepayment_amt_1 = st.number_input('Enter Prepayment Amount')
+
+
 
 #Emi_amount = st.nummber_input(label ='Enter Per month EMI amount', min_value=0, max_value=10000000000000000000000000000,value=100)
 #Total_oustanding = st.nummber_input(label ='Enter total Outstandling loan', min_value=0, max_value=1000000000000000000000000000000,value=100)
@@ -15,6 +17,13 @@ prepayment_amt = st.number_input('Enter Prepayment Amount')
 #Total_oustanding = 5000000
 #interest_rate = 7
 #prepayment_amt = 100000
+
+Emi_amount = Emi_amount_1
+Total_oustanding = Total_oustanding_1
+interest_rate = interest_rate_1
+prepayment_amt =prepayment_amt_1
+
+
 total_sum = 0
 Monthly_interest = interest_rate / (1200)
 Total_amount = 0
@@ -55,6 +64,11 @@ Total_amount = 0
 Total_amount2 = 0
 m=0
 emi_stop = 0
+
+Emi_amount = Emi_amount_1
+Total_oustanding = Total_oustanding_1
+interest_rate = interest_rate_1
+prepayment_amt =prepayment_amt_1
 
 for j in range(0,1200):
     if j==1:
