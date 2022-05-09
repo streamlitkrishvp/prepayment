@@ -84,6 +84,3 @@ print(n2-n1)
 amount_saved = st.text_input(label= 'amount saved', value= (Total_amount2-Total_amount1))
 
 
-amount_saved = st.nummber_input(label ='Enter Prepayment Amount', min_value=0, max_value=100000000000000000000000000000000000,value=100)
-
-st.text_input(label, value="",
