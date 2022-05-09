@@ -4,12 +4,12 @@ EMI_amount = st.number_input(label='EMI Amount Per month', min_value=None, max_v
 Total_oustanding  = st.number_input(label='Total Outstanding Amount', min_value=None, max_value=None, value=100, step=100)
 interest_rate = st.number_input(label='Interest rate per annum',step=1,format="%.2f")
 prepayment_amt  = st.number_input(label='Prepayment ', min_value=None, max_value=None, value=100, step=100)
-
+interest_rate = st.number_input('Enter interest rate')
 
 #Emi_amount = st.nummber_input(label ='Enter Per month EMI amount', min_value=0, max_value=10000000000000000000000000000,value=100)
 #Total_oustanding = st.nummber_input(label ='Enter total Outstandling loan', min_value=0, max_value=1000000000000000000000000000000,value=100)
 #interest_rate = st.nummber_input(label ='Enter Annual Interest rate', min_value=0, max_value=100,value=.25)
-prepayment_amt = st.nummber_input(label ='Enter Prepayment Amount', min_value=0, max_value=100000000000000000000000000000000000,value=100)
+#prepayment_amt = st.nummber_input(label ='Enter Prepayment Amount', min_value=0, max_value=100000000000000000000000000000000000,value=100)
 #Emi_amount = 50000
 #Total_oustanding = 5000000
 #interest_rate = 7
@@ -79,6 +79,6 @@ print(Total_amount2)
 print(Total_amount2-Total_amount1)
 print(n2-n1)
 
-amount_saved = st.text_input(label= 'amount saved', value= (Total_amount2-Total_amount1))
-
+#amount_saved = st.text_input(label= 'amount saved', value= (Total_amount2-Total_amount1))
+st.write('The current number is ', Total_amount2-Total_amount1)
 
