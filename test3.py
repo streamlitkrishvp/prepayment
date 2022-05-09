@@ -1,6 +1,6 @@
 import streamlit as st
 st.header("Streamlit Machine Learning App")
-EMI_amount = st.number_input(label='EMI Amount Per month', min_value=None, max_value=None, value=100, step=100)
+Emi_amount = st.number_input(label='EMI Amount Per month', min_value=None, max_value=None, value=100, step=100)
 Total_oustanding  = st.number_input(label='Total Outstanding Amount', min_value=None, max_value=None, value=100, step=100)
 #interest_rate = st.number_input(label='Interest rate per annum',step=1,format="%.2f")
 #prepayment_amt  = st.number_input(label='Prepayment ', min_value=None, max_value=None, value=100, step=100)
