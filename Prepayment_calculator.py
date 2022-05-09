@@ -1,5 +1,5 @@
 import streamlit as st
-st.header("Streamlit Machine Learning App")
+st.header(" Prepayment benefit Calculator")
 Emi_amount_1 = st.number_input(label='EMI Amount Per month', min_value=None, max_value=None, value=100, step=100)
 Total_oustanding_1  = st.number_input(label='Total Outstanding Amount', min_value=None, max_value=None, value=100, step=100)
 #interest_rate = st.number_input(label='Interest rate per annum',step=1,format="%.2f")
