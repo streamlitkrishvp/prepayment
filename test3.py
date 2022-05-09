@@ -95,8 +95,11 @@ print(Total_amount2-Total_amount1)
 print(n2-n1)
 
 #amount_saved = st.text_input(label= 'amount saved', value= (Total_amount2-Total_amount1))
-st.write('Amount saved  is ', Total_amount1)
-st.write('Amount saved  is ', Total_amount2)
-st.write('Amount saved  is ', Total_amount2-Total_amount1)
+#st.write('Amount saved  is ', Total_amount1)
+#st.write('Amount saved  is ', Total_amount2)
+
+st.write('Amount saved by Prepayment is ', Total_amount2-Total_amount1)
+
+st.write(' No of months reduced by prepayment is ', n2-n1)
 
 
