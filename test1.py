@@ -4,10 +4,18 @@ Created on Mon May  9 11:31:01 2022
 
 
 """
-Emi_amount = 50000
-Total_oustanding = 5000000
-interest_rate = 7
-prepayment_amt = 100000
+import streamlit as st
+
+st.header("Hosing Loan Prepayent Calculator")
+
+Emi_amount = st.nummber_input(label ='Enter Per month EMI amount', min_value=0, max_value=10000000000000000000000000000,value=100)
+Total_oustanding = st.nummber_input(label ='Enter total Outstandling loan', min_value=0, max_value=1000000000000000000000000000000,value=100)
+interest_rate = st.nummber_input(label ='Enter Annual Interest rate', min_value=0, max_value=100,value=.25)
+prepayment_amt = st.nummber_input(label ='Enter Prepayment Amount', min_value=0, max_value=100000000000000000000000000000000000,value=100)
+#Emi_amount = 50000
+#Total_oustanding = 5000000
+#interest_rate = 7
+#prepayment_amt = 100000
 total_sum = 0
 Monthly_interest = interest_rate / (1200)
 Total_amount = 0
@@ -15,6 +23,8 @@ Total_amount1 =0
 Total_amount2 = 0
 k=0
 emi_stop = 0
+
+
 
 for i in range(0,1200):
     if i==1:
@@ -36,10 +46,10 @@ for i in range(0,1200):
     if emi_stop < 0:
         k = 1
     
-Emi_amount = 50000
-Total_oustanding = 5000000
-interest_rate = 7
-prepayment_amt = 100000
+#Emi_amount = 50000
+#Total_oustanding = 5000000
+#interest_rate = 7
+#prepayment_amt = 100000
 total_sum = 0
 Monthly_interest = interest_rate / (1200)
 Total_amount = 0
@@ -70,3 +80,10 @@ print(Total_amount1)
 print(Total_amount2)
 print(Total_amount2-Total_amount1)
 print(n2-n1)
+
+amount_saved = st.text_input(label= 'amount saved', value= (Total_amount2-Total_amount1))
+
+
+amount_saved = st.nummber_input(label ='Enter Prepayment Amount', min_value=0, max_value=100000000000000000000000000000000000,value=100)
+
+st.text_input(label, value="",
