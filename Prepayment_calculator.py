@@ -98,7 +98,9 @@ print(n2-n1)
 #st.write('Amount saved  is ', Total_amount1)
 #st.write('Amount saved  is ', Total_amount2)
 
-st.write('Amount saved by Prepayment is ', round(Total_amount2-Total_amount1))
+Out_number =  ('{:,}'.format(round(Total_amount2-Total_amount1)))
+
+st.write('Amount saved by Prepayment is ', Out_number)
 
 st.write(' No of months reduced by prepayment is ', n2-n1)
 
